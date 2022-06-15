@@ -1,0 +1,6 @@
+applicationType: default
+defaultPackage: com.giacom
+testFramework: junit
+sourceLanguage: kotlin
+buildTool: gradle_kotlin
+features: [annotation-api, app-name, assertj, gradle, http-client, jdbc-hikari, junit, kotlin, kotlin-application, kotlin-extension-functions, logback, mockito, netty-server, openapi, postgres, properties, readme, shade, testcontainers]
