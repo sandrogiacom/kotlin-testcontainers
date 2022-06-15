@@ -1,0 +1,25 @@
+version: '3.3'
+
+services:
+
+  db:
+    image: postgres:12
+    restart: 'no'
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_DB=customer
+    ports:
+      - '5432:5432'
+    volumes:
+      - db:/var/lib/postgresql/data
+
+  adminer:
+    image: adminer
+    restart: 'no'
+    ports:
+      - '8082:8080'
+
+volumes:
+  db:
+    driver: local

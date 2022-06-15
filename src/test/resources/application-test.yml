@@ -1,0 +1,12 @@
+#Sun Jun 12 02:27:28 GMT 2022
+datasources:
+  default:
+    url: jdbc:tc:postgresql:12:///test
+    driverClassName: org.testcontainers.jdbc.ContainerDatabaseDriver
+jpa:
+  default:
+    properties:
+      hibernate:
+        hbm2ddl:
+          auto: update
+        show_sql: true

@@ -1,0 +1,17 @@
+#Sun Jun 12 02:27:28 GMT 2022
+micronaut:
+  application:
+    name: demoTestcontainers
+datasources:
+  default:
+    url: jdbc:postgresql://localhost:5432/customer
+    driverClassName: org.postgresql.Driver
+    username: postgres
+    password: password
+jpa:
+  default:
+    properties:
+      hibernate:
+        hbm2ddl:
+          auto: update
+        show_sql: true
